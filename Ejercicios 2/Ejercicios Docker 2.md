@@ -27,14 +27,27 @@ docker run -d --name contenedor php:7.4-apache
 
 - Comprueba el tamaño del contenedor en el disco duro.
 ~~~
-
+docker system df
 ~~~
--  Con la instrucción docker cp podemos copiar ficheros a o desde un contenedor. Puedesencontrar información es esta página. Crea un fichero en tu ordenador, con el siguientecontenido:
+![](../Captura/CP4.png)
+-  Con la instrucción docker cp podemos copiar ficheros a o desde un contenedor. Puedes encontrar información es esta página. Crea un fichero en tu ordenador, con el siguientecontenido:
 ~~~
 <?php
     echophpinfo();
 ?>
 ~~~
 Copia un fichero info.php al directorio /var/www/html del contenedor con docker cp.
+~~~
+docker cp /home/daw/info.php contenedor:/var/www/html
+~~~
+![](../Captura/CP5.png)
+
 - Vuelve a comprobar el espacio ocupado por el contenedor.
+~~~
+docker system df
+~~~
+![](../Captura/CP6.png)
+
 - Accede al fichero info.php desde un navegador web.
+![](../Captura/CP7.png)
+
