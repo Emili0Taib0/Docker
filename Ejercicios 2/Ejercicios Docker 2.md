@@ -21,8 +21,9 @@ docker image ls
 ![](../Captura/CP2.png)
 - Crea un contenedor demonio con la imagen php:7.4-apache.
 ~~~
-
+docker run -d --name contenedor php:7.4-apache
 ~~~
+![](../Captura/CP3.png)
 
 - Comprueba el tamaño del contenedor en el disco duro.
 ~~~
