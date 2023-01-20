@@ -16,8 +16,9 @@ docker pull php:7.4-apache
 
 - Muestras las imágenes que tienes descargadas.
 ~~~
-
+docker image ls
 ~~~
+![](../Captura/CP2.png)
 - Crea un contenedor demonio con la imagen php:7.4-apache.
 ~~~
 
