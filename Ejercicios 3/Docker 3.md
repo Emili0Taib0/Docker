@@ -9,7 +9,7 @@ docker volume create miweb
 ~~~
 ![](../Captura/CP8.png)
 
-- Crea un contenedor desde la imagen php:7.4-apache donde montes en el directorio/var/www/html (que sabemos que es el DocumentRoot del servidor que nos ofrece esaimagen) el volumen docker que has creado.
+- Crea un contenedor desde la imagen php:7.4-apache donde montes en el directorio/var/www/html (que sabemos que es el DocumentRoot del servidor que nos ofrece esa imagen) el volumen docker que has creado.
 
 - Utiliza el comando docker cp para copiar un fichero index.html en el directorio/var/www/html.
 
