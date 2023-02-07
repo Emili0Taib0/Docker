@@ -7,7 +7,7 @@
 ~~~
 docker volume create miweb
 ~~~
-![](../Captura/CP3.1.png)
+![](../Captura/CP3.1.PNG)
 
 - Crea un contenedor desde la imagen php:7.4-apache donde montes en el directorio/var/www/html (que sabemos que es el DocumentRoot del servidor que nos ofrece esaimagen) el volumen docker que has creado.
 
@@ -15,30 +15,30 @@ docker volume create miweb
 docker run -d --name php --mount type=volume,src=miweb,dst=miweb,dst=/var/www/html -p 8080:80 php:7.4-apache
 ~~~
 
-![](../Captura/CP3.2.png)
+![](../Captura/CP3.2.PNG)
 
 - Utiliza el comando docker cp para copiar un fichero index.html en el directorio/var/www/html.
 
 ~~~
 docker cp ./index.html php:/var/www/html
 ~~~
-![](../Captura/CP3.3.png)
+![](../Captura/CP3.3.PNG)
 - Accede al contenedor desde el navegador para ver la información ofrecida por el ficheroindex.html.
-![](../Captura/CP3.4.png)
+![](../Captura/CP3.4.PNG)
 - Borra el contenedor
 
 ~~~
 docker stop php
 docker rm php
 ~~~
-![](../Captura/CP3.5.png)
+![](../Captura/CP3.5.PNG)
 - Crea un nuevo contenedor y monta el mismo volumen como en el ejercicio anterior.
 ~~~
 docker run -d --name php --mount type=volume,src=miweb,dst=miweb,dst=/var/www/html -p 8080:80 php:7.4-apache
 ~~~
-![](../Captura/CP3.6.png)
+![](../Captura/CP3.6.PNG)
 -  Accede al contenedor desde el navegador para ver la información ofrecida por el ficheroindex.html. ¿Seguía existiendo ese fichero?
-![](../Captura/CP3.6.png)
+![](../Captura/CP3.6.PNG)
 ## Bind mount
 
 - Crea un directorio en tu host y dentro crea un fichero index.html.
