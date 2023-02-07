@@ -38,7 +38,7 @@ docker run -d --name php --mount type=volume,src=miweb,dst=miweb,dst=/var/www/ht
 ~~~
 ![](../Captura/CP3.6.PNG)
 -  Accede al contenedor desde el navegador para ver la información ofrecida por el ficheroindex.html. ¿Seguía existiendo ese fichero?
-![](../Captura/CP3.6.PNG)
+![](../Captura/CP3.7.PNG)
 ## Bind mount
 
 - Crea un directorio en tu host y dentro crea un fichero index.html.
