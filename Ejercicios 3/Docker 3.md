@@ -47,11 +47,11 @@ Si sigue existiendo
 - Crea un directorio en tu host y dentro crea un fichero index.html.
 ***
 ![](../Captura/CP3.8.PNG)
-***
+
 - Crea un contenedor desde la imagen php:7.4-apache donde montes en el directorio/var/www/html el directorio que has creado por medio de bind mount.
 ***
 ![](../Captura/CP3.9.PNG)
-***
+
 -  Accede al contenedor desde el navegador para ver la información ofrecida por el ficheroindex.html.
 ***
 ![](../Captura/CP3.10.PNG)
