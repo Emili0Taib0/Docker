@@ -50,7 +50,9 @@ Si sigue existiendo
 -  Accede al contenedor desde el navegador para ver la información ofrecida por el ficheroindex.html.
 ![](../Captura/CP3.10.PNG)
 - Modifica el contenido del fichero index.html en tu host y comprueba que al refrescar lapágina ofrecida por el contenedor, el contenido ha cambiado.
+
 ![](../Captura/CP3.11.PNG)
+
 ![](../Captura/CP3.12.PNG)
 -  Borra el contenedor
 ![](../Captura/CP3.13.PNG)
