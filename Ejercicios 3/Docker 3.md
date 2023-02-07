@@ -44,10 +44,13 @@ Si sigue existiendo
 ## Bind mount
 
 - Crea un directorio en tu host y dentro crea un fichero index.html.
+
 ![](../Captura/CP3.8.PNG)
 - Crea un contenedor desde la imagen php:7.4-apache donde montes en el directorio/var/www/html el directorio que has creado por medio de bind mount.
+
 ![](../Captura/CP3.9.PNG)
 -  Accede al contenedor desde el navegador para ver la información ofrecida por el ficheroindex.html.
+
 ![](../Captura/CP3.10.PNG)
 - Modifica el contenido del fichero index.html en tu host y comprueba que al refrescar lapágina ofrecida por el contenedor, el contenido ha cambiado.
 
@@ -55,9 +58,12 @@ Si sigue existiendo
 
 ![](../Captura/CP3.12.PNG)
 -  Borra el contenedor
+
 ![](../Captura/CP3.13.PNG)
 ![](../Captura/CP3.14.PNG)
 - Crea un nuevo contenedor y monta el mismo directorio como en el ejercicio anterior.
+
 ![](../Captura/CP3.15.PNG)
 - Accede al contenedor desde el navegador para ver la información ofrecida por el ficheroindex.html. ¿Se sigue viendo el mismo contenido?
+
 - ![](../Captura/CP3.16.PNG)
